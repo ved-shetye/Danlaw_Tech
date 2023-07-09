@@ -2,6 +2,22 @@ body {
     margin:3%;
     text-align: center;
   }
+
+.logo_pic{
+  align-content: center;
+  height: 12rem;
+  width: 36rem;
+}
+
+.logo_name{
+  font-size: 3rem;
+}
+
+.void{
+  height: 2rem;
+  width: auto;
+}
+
 #footer {
     position: fixed;
     bottom: 0;
@@ -14,4 +30,16 @@ body {
 }
 .submit-button {
   align-items: center;
+}
+
+.void2{
+  height: 3rem;
+}
+
+.foot{
+  position: relative;
+  bottom: 0rem;
+  text-align: center;
+  left: auto;
+  right: auto;
 }
