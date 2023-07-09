@@ -101,7 +101,7 @@ app.post("/", upload.single("excelsheet"), (req, res) => {
 
 app.post("/filterby", (req, res) => {
   const dd = req.body.DATE;
-  const dv = req.body.SHIFT;
+  const dv  = req.body.SHIFT;
   const dp = req.body.PRODUCT;
   const dt = req.body.TYPE;
   const da = req.body.ACTIVITY;
