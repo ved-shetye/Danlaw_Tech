@@ -1,0 +1,76 @@
+<%- include("header") -%>
+<form action="/" method="post" enctype="multipart/form-data">
+  <input type="file" name="excelsheet" />
+  <button type="submit">Upload</button>
+</form>
+<br>
+<div class="filterby">
+  <form action="/filterby" method="post">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <label> <input type="checkbox" id="myCheckbox1" /> Date:  </label>
+        <input
+          name="DATE"
+          type="text"
+          id="myInput1"
+          placeholder="Enter text"
+          disabled
+        />
+      </li>
+      <li class="list-group-item">
+        <label> <input type="checkbox" id="myCheckbox2" /> Shift: </label>
+        <input
+          name="SHIFT"
+          type="text"
+          id="myInput2"
+          placeholder="Enter text"
+          disabled
+        />
+      </li>
+      <li class="list-group-item">
+        <label> <input type="checkbox" id="myCheckbox3" /> Product: </label>
+        <input
+          name="PRODUCT"
+          type="text"
+          id="myInput3"
+          placeholder="Enter text"
+          disabled
+        />
+      </li>
+      <li class="list-group-item">
+        <label> <input type="checkbox" id="myCheckbox4" /> Type: </label>
+        <input
+          name="TYPE"
+          type="text"
+          id="myInput4"
+          placeholder="Enter text"
+          disabled
+        />
+      </li>
+      <li class="list-group-item">
+        <label> <input type="checkbox" id="myCheckbox5" /> Activity: </label>
+        <input
+          name="ACTIVITY"
+          type="text"
+          id="myInput5"
+          placeholder="Enter text"
+          disabled
+        />
+      </li>
+      <li class="list-group-item">
+        <label> <input type="checkbox" id="myCheckbox6" /> Operator: </label>
+        <input
+          name="OPERATOR"
+          type="text"
+          id="myInput6"
+          placeholder="Enter text"
+          disabled
+        />
+      </li>
+    </ul>
+    <button class="submit-button" type="submit">Filter</button>
+  </form>
+</div>
+
+<script src="options.js"></script>
+<%- include("footer") -%>

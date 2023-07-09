@@ -1,0 +1,33 @@
+<%- include("header") -%>
+
+<h1 class="filtered-excel">Filtered Excel</h1>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th class="scope">DATE</th>
+            <th class="scope">SHIFT</th>
+            <th class="scope">PRODUCT</th>
+            <th class="scope">TYPE</th>
+            <th class="scope">ACTIVITY</th>
+            <th class="scope">OPERATOR</th>
+            <th class="scope">QTY</th>
+        </tr>
+    </thead>
+  <% for (let i = 0; i < number.length; i++) { %>
+  <tr>
+    <td><%= number[i].DATE %></td>
+    <td><%= number[i].SHIFT %></td>
+    <td><%= number[i].PRODUCT %></td>
+    <td><%= number[i].TYPE %></td>
+    <td><%= number[i].ACTIVITY %></td>
+    <td><%= number[i].OPERATOR %></td>
+    <td><%= number[i].QTY %></td>
+  </tr>
+  <%}%>
+</table>
+<div id="footer">
+    <form action="/downloadFile" method="get">
+        <button >Download</button>
+      </form>
+</div>
+<%- include("footer") -%>
